@@ -1,0 +1,41 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.sign-in-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #E7E7E7;
+    border-radius: 20px;
+    height: 40px;
+    padding: 5px 10px;
+}
+
+.sing-in {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.name {
+    font-family: 'Orienta';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: rgba(0, 0, 0, 0.87);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.header-icon {
+    font-size: 30px;
+    margin: 0 3px;
+    color: rgba(0, 0, 0, .1);
+}
+
+.user {
+    color: rgb(180, 0, 0);
+}
