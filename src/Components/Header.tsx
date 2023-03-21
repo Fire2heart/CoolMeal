@@ -6,7 +6,7 @@ import {HiShoppingBag} from 'react-icons/hi'
 export default function Header() {
   return (
     <header>
-      <div className='name'>HyperSense</div>
+      <div className='name'>Cool<span className='name-red'>Meal</span></div>
       <div className='sign-in-box'>
         <div className='sing-in'>Sign in</div>
         <FaUser className='user header-icon' />

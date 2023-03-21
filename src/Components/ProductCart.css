@@ -1,0 +1,85 @@
+.product{
+    background-color: #F9F9F9;
+    margin: 10px 20px;
+    border-radius: 10px;
+}
+
+.top-info{
+    display: flex;
+    align-items: center;
+}
+
+.bottom-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-name{
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.product-recipe{
+    color: #636363;
+}
+
+.info{
+    padding: 10px 15px;
+}
+
+.product-info{
+    text-align: left;
+    margin-left: 15px;
+}
+
+.product-info div{
+    margin: 5px 0;
+}
+
+.button-details{
+    background-color: #E3E3E3;
+    border: 0;
+    box-shadow: 5px 0px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px 40px 40px 10px;
+    width: 50%;
+    position: absolute;
+    z-index: 10;
+    justify-content: center;
+}
+
+.product-price{
+    background: #C51636;
+    color: white;
+    border-radius: 100px;
+    position: relative;
+    width: 100%;
+    padding-right: 20px;
+    justify-content: end;
+}
+
+@media (min-width: 450px) {
+    .button-details {
+        width: 200px;
+    }
+    .product-price{
+        width: 350px;
+    }
+}
+
+.bottom-info div{
+    height: 5vh;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.product-icon{
+    height: 15vh;
+    max-width: 20vh;
+}
+
+.product-icon img{
+    width: 100%;
+    border-radius: 10px;
+}

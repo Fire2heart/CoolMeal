@@ -29,7 +29,7 @@ function Search() {
     }
 
   return (
-    <div>
+    <div className='search'>
         <div className='search-bar'>
             <input
             ref={input}

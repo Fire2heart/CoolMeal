@@ -1,3 +1,7 @@
+.search{
+    margin-top: 120px;
+}
+
 .search-icon {
     font-size: 35px;
     color: rgb(180, 0, 0);
@@ -10,7 +14,6 @@
 
     background: #EFEEEE;
     opacity: 0.7;
-    /* Light_gray */
 
     border: 1px solid #D0CFCF;
     border-radius: 0px 0px 20px 20px;
