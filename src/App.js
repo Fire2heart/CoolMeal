@@ -11,9 +11,9 @@ function App() {
     <div className="App">
       <Header />
       <Search />
-      {/* <SyncSlider />
       <SyncSlider />
-      <ProductCart />
+      <SyncSlider />
+      {/* <ProductCart />
       <ProductCart />
       <ProductCart /> */}
       <Menu />
