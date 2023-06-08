@@ -4,9 +4,9 @@ import { AiOutlinePlus } from 'react-icons/ai'
 
 function Cart({id, name, price, img}) {
     return (
-        <div className='cart'>
+        <li className='cart'>
             <div className='cart-img'>
-                <img src={img} alt='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png' />
+                <img src={img} alt='' />
             </div>
             <div className='cart-bar'>
                 <div className='cart-info'>
@@ -17,7 +17,7 @@ function Cart({id, name, price, img}) {
                     <AiOutlinePlus className='cart-icon'/>
                 </div>
             </div>
-        </div>
+        </li>
     )
 }
 

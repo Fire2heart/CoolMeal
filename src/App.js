@@ -10,14 +10,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Search />
-      <SyncSlider />
-      <SyncSlider />
+      {/* <Search /> */}
+      {/* <SyncSlider />
+      <SyncSlider /> */}
       {/* <ProductCart />
       <ProductCart />
       <ProductCart /> */}
-      <Menu />
-      <Footer />
+      {/* <Menu /> */}
+      {/* <Footer /> */}
     </div>
   );
 }

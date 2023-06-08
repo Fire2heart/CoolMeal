@@ -1,8 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import axios from 'axios';
-import './Search.css'
-import { AiOutlineSearch } from 'react-icons/ai'
-import { GrClose } from 'react-icons/gr'
+import './Search.css';
+import { AiOutlineSearch } from 'react-icons/ai';
+import { GrClose } from 'react-icons/gr';
+import ProductCart from './ProductCart';
 
 function Search() {
 
@@ -13,7 +14,7 @@ function Search() {
 
     useEffect(() => {
         const fetchData = async () => {
-        const res = await axios.get(`http://localhost:3001?q=${query}`);
+        const res = await axios.get(`https://coolmeal.onrender.com/api/search/${query}`);
         setData(res.data);
     };
     if (query.length === 0 || query.length > 2) fetchData();
@@ -45,12 +46,20 @@ function Search() {
             { query === '' ? <AiOutlineSearch className='search-icon' onClick={ Focus }/> : <GrClose className='search-icon' onClick={clearInput}/> }
         </div>
       <ul className="list">
-        {data.filter((asd) =>
-          asd.first_name.toLowerCase().includes(query)
-        ).map((user) => (
-          <li className="listItem" key={user.id}>
-            {user.first_name}
-          </li>
+        {data.filter((item) =>
+          item.name.toLowerCase().includes(query)
+        ).map((item) => (
+          // <li className="listItem" key={user.id}>
+          //   {user.first_name}
+          // </li>
+          <ProductCart
+            key={item.id}
+            name={item.name}
+            description={item.description}
+            weight={item.weight}
+            price={item.price}
+            img={item.img}
+          />
         ))}
       </ul>
     </div>
